@@ -1,0 +1,495 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link href="/assets/index/Content/jquery.notify.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- TITLE -->
+
+    <title>iPoolCare</title>
+
+    <!-- LINK -->
+    <!-- <link href="/assets/index/Content/bootstrap.css" rel="stylesheet">
+    <link href="/assets/index/Content/animate.css" rel="stylesheet">
+    <link href="/assets/index/Content/Site.css?011701" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <link href="/assets/index/Content/MobileSite.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+      !function(o,l){var r,a,s="createElement",g="getElementsByTagName",b="length",E="style",d="title",y="undefined",k="setAttribute",w="getAttribute",x=null,A="__svgInject",C="--inject-",S=new RegExp(C+"\\d+","g"),I="LOAD_FAIL",t="SVG_NOT_SUPPORTED",L="SVG_INVALID",v=["src","alt","onload","onerror"],j=l[s]("a"),G=typeof SVGRect!=y,f={useCache:!0,copyAttributes:!0,makeIdsUnique:!0},N={clipPath:["clip-path"],"color-profile":x,cursor:x,filter:x,linearGradient:["fill","stroke"],marker:["marker",
+      "marker-end","marker-mid","marker-start"],mask:x,pattern:["fill","stroke"],radialGradient:["fill","stroke"]},u=1,c=2,O=1;function T(e){return(r=r||new XMLSerializer).serializeToString(e)}function P(e,r){var t,n,i,o,a=C+O++,f=/url\("?#([a-zA-Z][\w:.-]*)"?\)/g,u=e.querySelectorAll("[id]"),c=r?[]:x,l={},s=[],d=!1;if(u[b]){for(i=0;i<u[b];i++)(n=u[i].localName)in N&&(l[n]=1);for(n in l)(N[n]||[n]).forEach(function(e){s.indexOf(e)<0&&s.push(e)});s[b]&&s.push(E);var v,p,m,h=e[g]("*"),y=e;for(i=-1;y!=x;
+      ){if(y.localName==E)(m=(p=y.textContent)&&p.replace(f,function(e,r){return c&&(c[r]=1),"url(#"+r+a+")"}))!==p&&(y.textContent=m);else if(y.hasAttributes()){for(o=0;o<s[b];o++)v=s[o],(m=(p=y[w](v))&&p.replace(f,function(e,r){return c&&(c[r]=1),"url(#"+r+a+")"}))!==p&&y[k](v,m);["xlink:href","href"].forEach(function(e){var r=y[w](e);/^\s*#/.test(r)&&(r=r.trim(),y[k](e,r+a),c&&(c[r.substring(1)]=1))})}y=h[++i]}for(i=0;i<u[b];i++)t=u[i],c&&!c[t.id]||(t.id+=a,d=!0)}return d}function V(e,r,t,n){if(r){
+      r[k]("data-inject-url",t);var i=e.parentNode;if(i){n.copyAttributes&&function c(e,r){for(var t,n,i,o=e.attributes,a=0;a<o[b];a++)if(n=(t=o[a]).name,-1==v.indexOf(n))if(i=t.value,n==d){var f,u=r.firstElementChild;u&&u.localName.toLowerCase()==d?f=u:(f=l[s+"NS"]("http://www.w3.org/2000/svg",d),r.insertBefore(f,u)),f.textContent=i}else r[k](n,i)}(e,r);var o=n.beforeInject,a=o&&o(e,r)||r;i.replaceChild(a,e),e[A]=u,m(e);var f=n.afterInject;f&&f(e,a)}}else D(e,n)}function p(){for(var e={},r=arguments,
+      t=0;t<r[b];t++){var n=r[t];for(var i in n)n.hasOwnProperty(i)&&(e[i]=n[i])}return e}function _(e,r){if(r){var t;try{t=function i(e){return(a=a||new DOMParser).parseFromString(e,"text/xml")}(e)}catch(o){return x}return t[g]("parsererror")[b]?x:t.documentElement}var n=l.createElement("div");return n.innerHTML=e,n.firstElementChild}function m(e){e.removeAttribute("onload")}function n(e){console.error("SVGInject: "+e)}function i(e,r,t){e[A]=c,t.onFail?t.onFail(e,r):n(r)}function D(e,r){m(e),i(e,L,r)
+      }function F(e,r){m(e),i(e,t,r)}function M(e,r){i(e,I,r)}function q(e){e.onload=x,e.onerror=x}function R(e){n("no img element")}var e=function z(e,r){var t=p(f,r),h={};function n(a,f){f=p(t,f);var e=function(r){var e=function(){var e=f.onAllFinish;e&&e(),r&&r()};if(a&&typeof a[b]!=y){var t=0,n=a[b];if(0==n)e();else for(var i=function(){++t==n&&e()},o=0;o<n;o++)u(a[o],f,i)}else u(a,f,e)};return typeof Promise==y?e():new Promise(e)}function u(u,c,e){if(u){var r=u[A];if(r)Array.isArray(r)?r.push(e
+      ):e();else{if(q(u),!G)return F(u,c),void e();var t=c.beforeLoad,n=t&&t(u)||u[w]("src");if(!n)return""===n&&M(u,c),void e();var i=[];u[A]=i;var l=function(){e(),i.forEach(function(e){e()})},s=function f(e){return j.href=e,j.href}(n),d=c.useCache,v=c.makeIdsUnique,p=function(r){d&&(h[s].forEach(function(e){e(r)}),h[s]=r)};if(d){var o,a=function(e){if(e===I)M(u,c);else if(e===L)D(u,c);else{var r,t=e[0],n=e[1],i=e[2];v&&(t===x?(t=P(r=_(n,!1),!1),e[0]=t,e[2]=t&&T(r)):t&&(n=function o(e){
+      return e.replace(S,C+O++)}(i))),r=r||_(n,!1),V(u,r,s,c)}l()};if(typeof(o=h[s])!=y)return void(o.isCallbackQueue?o.push(a):a(o));(o=[]).isCallbackQueue=!0,h[s]=o}!function m(e,r,t){if(e){var n=new XMLHttpRequest;n.onreadystatechange=function(){if(4==n.readyState){var e=n.status;200==e?r(n.responseXML,n.responseText.trim()):400<=e?t():0==e&&t()}},n.open("GET",e,!0),n.send()}}(s,function(e,r){var t=e instanceof Document?e.documentElement:_(r,!0),n=c.afterLoad;if(n){var i=n(t,r)||t;if(i){
+      var o="string"==typeof i;r=o?i:T(t),t=o?_(i,!0):i}}if(t instanceof SVGElement){var a=x;if(v&&(a=P(t,!1)),d){var f=a&&T(t);p([a,r,f])}V(u,t,s,c)}else D(u,c),p(L);l()},function(){M(u,c),p(I),l()})}}else R()}return G&&function i(e){var r=l[g]("head")[0];if(r){var t=l[s](E);t.type="text/css",t.appendChild(l.createTextNode(e)),r.appendChild(t)}}('img[onload^="'+e+'("]{visibility:hidden;}'),n.setOptions=function(e){t=p(t,e)},n.create=z,n.err=function(e,r){e?e[A]!=c&&(q(e),G?(m(e),M(e,t)):F(e,t),r&&(m(
+      e),e.src=r)):R()},o[e]=n}("SVGInject");"object"==typeof module&&"object"==typeof module.exports&&(module.exports=e)}(window,document);
+    </script>
+  </head>
+
+  <body>
+    <!-- ========== HEADER ============ -->
+    <header id="header">
+
+      <!-- ============ MENU HAMBURGUER ============== -->
+      <nav class="navbar-mobile">
+        <div class="bx" id="bx"></div>
+        <div class="logo-ipoolcare">
+          <a href="#home">
+            <img src="/assets/Images/logo_header.png" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- ============ MENU DESKTOP ============== -->
+      <nav class="navbar-dasktop">
+
+        <div class="navbar-desktop-item-1">
+          <div class="logo-ipoolcare">
+            <a href="#home">
+              <img src="/assets/Images/logo_header.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-desktop-item-2">
+          <ul class="menu-desktop">
+            <li class="menu-item">
+              <a href="#solution" class="nav-link-desktop">Solução</a>
+            </li>
+            <li class="menu-item">
+              <a href="#advantage" class="nav-link-desktop">Vantagens</a>
+            </li>
+            <li class="menu-item">
+              <a href="#benefits" class="nav-link-desktop">Beneficios</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contanct" class="nav-link-desktop">Contato</a>
+            </li>
+            <li class="menu-item">
+              <a href="https://ipoolcare-panel.azurewebsites.net/login" class="nav-link-desktop">Veja como está sua piscina</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <!-- ============ MENU MOBILE ============== -->
+      <nav class="menu-mobile" id="menu-mobile">
+        <ul class="nav-list-mobile">
+            <li>
+                <a href="#solution" class="nav-link-mobile">Nossa Solução</a>
+            </li>
+            <li>
+                <a href="#advantage" class="nav-link-mobile">Vantagens para Administradores</a>
+            </li>
+            <li>
+                <a href="#benefits" class="nav-link-mobile">Benefícios para usuários</a>
+            </li>
+            <li>
+                <a href="#contanct" class="nav-link-mobile">Contato</a>
+            </li>
+            <li>
+              <a href="https://ipoolcare-panel.azurewebsites.net/login" class="nav-link-mobile">Veja como está sua piscina</a>
+            </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- ========== HERO ============ -->
+
+    <main class="container-main hero" id="home">
+      <div class="bg-home">
+        <img src="./assets/Images/bg-home.svg" class="svg-bg-home" loading="lazy" onload="SVGInject(this)" />
+      </div>
+
+      <div class="flex-item-1" data-aos="fade-right">
+        <h1 class="title">
+          Descubra nossos tratamentos de piscina
+          <span>inovadores</span>. Pronto para uma
+          <span>mudança</span>?
+        </h1>
+
+        <p class="description">
+          Somos uma startup que está revolucionando o mercado de tratamento de piscinas através da tecnologia IoT.
+        </p>
+        <div class="content-buttons">
+          <a href="#solution" class="button-btn">
+            <span>
+              Saiba mais!
+            </span>
+            <i></i>
+          </a>
+
+          <a href="#contanct" class="button-btn-phone">
+            <img src="./assets/Images/Vector.svg" alt="">
+            <i></i>
+          </a>
+        </div>
+      </div>
+
+        <div class="flex-item-3">
+          <div class="card-kid">
+            <img src="./assets/Images/icon-card.svg" class="icon-card-hero" loading="lazy" onload="SVGInject(this)" />
+            <img src="./assets/Images/icon-card-1.svg" class="icon-mobile-hero" loading="lazy" onload="SVGInject(this)" />
+            <img src="./assets/Images/icon-card-2.svg" class="icon-contact-hero" loading="lazy" onload="SVGInject(this)" />
+            <img src="./assets/Images/kid.png" alt="">
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- ========== SOLUTION ============ -->
+
+    <section id="solution">
+      <div class="secText">
+        <h2>Nossa Solução</h2>
+
+        <p>Sabe todos aqueles problemas que administrar uma piscina traz? Como reclamações de usuários, alto custo com ações corretivas e falta ou despreparos de funcionários...</p>
+
+        <p>
+          Das reclamações ao alto custo, e da falta de preparo dos funcionários às dores de cabeça diárias, a <span>iPoolCare®</span> está aqui para transformar desafios em soluções.
+        </p>
+      </div>
+
+      <div class="content">
+
+        <div class="servicesBx" data-aos="flip-left">
+          <img src="./assets/Images/computer.png" alt="">
+          <h3>Instalação de software exclusivo iPoolCare.</h3>
+          <p>Para monitoramento e controle dos principais parâmetros da água.</p>
+        </div>
+
+        <div class="servicesBx" data-aos="flip-left">
+          <img src="./assets/Images/test-tube.png" alt="">
+          <h3>Automação química inteligente</h3>
+          <p>Para dosagem automática do minimo necessário de químicos.</p>
+        </div>
+
+        <div class="servicesBx" data-aos="flip-left">
+          <img src="./assets/Images/panel.png" alt="">
+          <h3>Comunicação dos parâmetros d'água</h3>
+          <p>Para que os admistradores e usuários possam acompanhar a qualidade da água pelo celular e em monitores instalados próximo às piscinas.</p>
+        </div>
+
+        <div class="servicesBx" data-aos="flip-left">
+          <img src="./assets/Images/career.png" alt="">
+          <h3>Treinamento & Capacitação</h3>
+          <p>Para Capacitar os Ninjas a realizarem o cuidado estético e superficial da piscina</p>
+        </div>
+
+      </div>
+
+      <div class="content-buttons mt-4">
+        <a href="#advantage" class="button-btn">
+          <span>
+            Saiba mais!
+          </span>
+          <i></i>
+        </a>
+
+        <!-- <a href="#contato" class="button-btn-phone">
+          <img src="./assets/index/Images/Vector.svg" alt="">
+          <i></i>
+        </a> -->
+      </div>
+    </section>
+
+    <!-- ========== ADVANTAGE ============ -->
+
+    <section id="advantage">
+      <div
+        class="advantageText"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <h2>Quais são as vantagens para os administradores?</h2>
+      </div>
+
+      <div
+        class="advantageCards"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="advantage-card-1">
+          <h3>Prevenção</h3>
+            <ul>
+              <li>Alertas automáticos sobre problemas.</li>
+              <li>Menos risco de exposição à Vigilância Sanitária e de passivos trabalhistas.</li>
+            </ul>
+        </div>
+        <div class="advantage-card-2">
+          <h3>Sustentabilidade</h3>
+          <ul>
+            <li>Menos troca da água.</li>
+            <li>Redução do uso das bombas em até 25%.</li>
+          </ul>
+        </div>
+        <div class="advantage-card-3">
+          <h3>Satisfação</h3>
+          <ul>
+            <li>Usuário mais satisfeito.</li>
+            <li>Menos reclamações.</li>
+            <li>Superação das expectativas dos condôminos.</li>
+          </ul>
+        </div>
+        <div class="advantage-card-4">
+          <h3>Praticidade</h3>
+          <ul>
+            <li>Relatórios automáticos de acompanhamento online.</li>
+            <li>Redução da mão de obra especializada através da terceirização de compras, manutenção de equipamentos e treinamento dos cuidadores da piscina.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-buttons mt-4">
+        <a href="#benefits" class="button-btn">
+          <span>
+            Saiba mais!
+          </span>
+          <i></i>
+        </a>
+
+        <!-- <a href="#contato" class="button-btn-phone">
+          <img src="./assets/index/Images/Vector.svg" alt="">
+          <i></i>
+        </a> -->
+      </div>
+    </section>
+
+    <!-- ========== BENEFITS ============ -->
+
+    <section id="benefits">
+      <div class="content-main">
+        <div>
+          <span class="subTitle">Benefícios</span>
+          <h3>Vantagens para os Usuários</h3>
+        </div>
+
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/022-stopwatch.png">
+          <p>
+            Maior disponibilidade da piscina.
+          </p>
+        </div>
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/cabelo.png">
+          <p>
+            Sem cabelos ressecados.
+          </p>
+        </div>
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/zero-emission.png">
+          <p>
+            Sem o mau cheiro da cloramina.
+          </p>
+        </div>
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/mao.png">
+          <p>
+            Sem pele coçando.
+          </p>
+        </div>
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/thermometer.png">
+          <p>
+            Conhecimento da temperatura da água, antes mesmo de entrar.
+          </p>
+        </div>
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/014-beach-ball.png">
+          <p>
+            Liberdade para as crianças brincarem na água sem risco de contaminações.
+          </p>
+        </div>
+        <div
+          class="content-card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/assets/Images/quimico.png">
+          <p>
+            Sem produtos químicos agressivos logo, sem olhos irritados. Mergulho sem óculos liberado! :)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ============ -->
+
+    <section id="contanct">
+      <div class="content-contact">
+        <div class="content-item-1">
+          <p>
+            Quer reduzir o desperdício de água e todas as dores de cabeça que você tem hoje com a administração da piscina?
+          </p>
+
+          <p>
+            Então deixe seu contato no formulário a seguir!
+          </p>
+
+          <p>
+            Quer reduzir o desperdício de água e todas as dores de cabeça que você tem hoje com a administração da piscina?
+          </p>
+
+          <p>
+            Então deixe seu contato no formulário a seguir!
+          </p>
+
+          <p>
+            Quando receber o contato dos nossos especialistas, diga que conheceu a iPoolCare através dessa Landing Page e <b>ganhe um desconto especial</b>
+          </p>
+
+        </div>
+
+        <div class="content-item-2">
+          <div class="inputContent">
+            <label for="inputEmail3" class="">Nome: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtName"
+              required=""
+              placeholder="Digite seu nome"
+              oninvalid="this.setCustomValidity('Por favor digite seu nome')"
+              oninput="this.setCustomValidity('')"
+            >
+          </div>
+
+          <div class="inputContent">
+            <label for="inputEmail3" class="">Email: </label>
+            <input
+              type="email"
+              class="form-control"
+              id="txtEmail"
+              required=""
+              placeholder="seuemail@gmail.com"
+              oninvalid="this.setCustomValidity('Por favor digite seu email')"
+              oninput="this.setCustomValidity('')"
+            >
+          </div>
+
+          <div class="inputContent">
+            <label for="inputEmail3" class="">Telefone: </label>
+            <input
+              type="text"
+              class="form-control phone_with_ddd"
+              id="txtTelephone"
+              required=""
+              placeholder="(00) 00000-0000"
+              oninvalid="this.setCustomValidity('Por favor digite seu telefone')"
+              oninput="this.setCustomValidity('')"
+              maxlength="15"
+            >
+          </div>
+
+          <div class="inputContent">
+            <label for="inputEmail3" class=""></label>
+            <input
+              type="submit"
+              class="btn orange btnsend w-100 p-2 mt-2"
+              value="Enviar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER =========== -->
+
+    <footer id="footer" class="footer">
+      <img src="/assets/Images/logo_branco.png" class="icon-image">
+    </footer>
+
+    <!-- ========= SCRIPTS ========= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      function scrollHeader() {
+        const nav = document.getElementById('header');
+
+        if (this.scrollY >= 50) nav.classList.add('active-header'); else nav.classList.remove('active-header')
+      }
+
+      window.addEventListener('scroll', scrollHeader);
+
+      const showMenu = (toggleId, navId) =>{
+      const toggle = document.getElementById(toggleId);
+      const nav = document.getElementById(navId);
+
+      // Validate that variables exist
+      if(toggle && nav){
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active-menu-mobile');
+            toggle.classList.toggle('active-bx');
+        })
+      }
+      }
+
+      showMenu('bx', 'menu-mobile')
+
+      function closeMenu() {
+      const nav = document.getElementById('menu-mobile');
+      const bx = document.getElementById('bx');
+
+      nav.classList.remove('active-menu-mobile');
+      bx.classList.remove('active-bx');
+      }
+
+      // Adiciona evento de clique para cada link
+      document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.nav-link-mobile');
+        links.forEach(link => {
+          link.addEventListener('click', closeMenu);
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- <script src="/assets/index/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="/assets/index/Scripts/bootstrap.min.js"></script>
+    <script src="/assets/index/Scripts/wow.min.js"></script>
+    <script src="/assets/index/Scripts/jquery.notify.min.js"></script>
+    <script src="/assets/index/Scripts/jquery.mask.min.js"></script>
+    <script src="/assets/index/Scripts/Home.js?011701"></script> -->
+
+  </body>
+</html>
